@@ -4,11 +4,20 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
+  <meta name="author" content="Arturo Narros" />
+  <meta name="date" content="2015-11-02" />
+  <title>C/C++ Seminar</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="/Users/Aurelius/Library/Mobile Documents/com~apple~CloudDocs/iWork/Queen_Mary/Lessons/SeminarC_Cpp/src/john-style.css" type="text/css" />
+  <link rel="stylesheet" href="/Users/Aurelius/Library/Mobile Documents/com~apple~CloudDocs/iWork/Queen_Mary/Lessons/SeminarC_Cpp/src/mio.css" type="text/css" />
 </head>
 <body>
+<div id="header">
+<h1 class="title">C/C++ Seminar</h1>
+<h1 class="subtitle">Part II: Hands on C/C++</h1>
+<h2 class="author">Arturo Narros</h2>
+<h3 class="date">11/02/2015</h3>
+</div>
 <div id="TOC">
 <ul>
 <li><a href="#part-ii-hands-on-cc">Part II: Hands on C/C++</a><ul>
@@ -33,16 +42,13 @@
 </ul></li>
 </ul>
 </div>
-<hr />
-<p>author: Arturo Narros date: 11/02/2015 title: C/C++ Seminar subtitle: Part II: Hands on C/C++</p>
-<hr />
-<h1 id="part-ii-hands-on-cc">Part II: Hands on C/C++</h1>
-<h2 id="the-programming-environment">The programming environment</h2>
+<h1 id="part-ii-hands-on-cc"><a href="#part-ii-hands-on-cc">Part II: Hands on C/C++</a></h1>
+<h2 id="the-programming-environment"><a href="#the-programming-environment">The programming environment</a></h2>
 <p>We are going to use the <a href="http://codelite.org">CodeLite a Integrated-Programming-Environment:</a></p>
 <div class="figure">
 <img src="fig/CodeLittle.png" alt="(IDE CodeLite)" /><p class="caption">(IDE CodeLite)</p>
 </div>
-<h3 id="how-can-we-use-it">How can we use it?</h3>
+<h3 id="how-can-we-use-it"><a href="#how-can-we-use-it">How can we use it?</a></h3>
 <ul>
 <li><div class="figure">
 <img src="fig/01_workspace.png" alt="Figure 1: Create a workspace (only has to be done once!)" /><p class="caption"><strong>Figure 1</strong>: Create a workspace (only has to be done once!)</p>
@@ -61,8 +67,8 @@
 <img src="fig/05_workspace.png" alt="Figure 5: Select Compiler (gcc) and debugger (dbg) :" /><p class="caption"><strong>Figure 5</strong>: Select Compiler (gcc) and debugger (dbg) :</p>
 </div></li>
 <li><img src="fig/06_workspace.png" alt="Figure 6: Check the default program template (main.cpp) in src directory :" /></li>
-<li></li>
-</ul></li>
+</ul>
+-<br /></li>
 <li><div class="figure">
 <img src="fig/07_workspace.png" alt="Figure 7: Compile and Run the program:" /><p class="caption"><strong>Figure 7</strong>: Compile and Run the program:</p>
 </div>
@@ -78,21 +84,21 @@
 </div></li>
 </ul></li>
 </ul>
-<h3 id="practice">Practice:</h3>
+<h3 id="practice"><a href="#practice">Practice:</a></h3>
 <p><strong>EXERCISE 1</strong> : Create a new project (p2 for example) in CodeLittle.</p>
-<h2 id="hello-world-the-easiest-program-in-c">Hello World (the easiest program in C++)</h2>
+<h2 id="hello-world-the-easiest-program-in-c"><a href="#hello-world-the-easiest-program-in-c">Hello World (the easiest program in C++)</a></h2>
 <div class="figure">
 <img src="fig/hello_world.png" alt="The easiest program in C++" /><p class="caption">The easiest program in C++</p>
 </div>
-<h3 id="explanation">Explanation:</h3>
-<h4 id="the-header">The Header</h4>
+<h3 id="explanation"><a href="#explanation">Explanation:</a></h3>
+<h4 id="the-header"><a href="#the-header">The Header</a></h4>
 <div class="figure">
 <img src="fig/01_hello_world.png" alt="1: Comments, multiple-line" /><p class="caption"><strong>1:</strong> Comments, multiple-line</p>
 </div>
 <div class="figure">
 <img src="fig/02_hello_world.png" alt="2: Include file directive with using namespace std; directive" /><p class="caption"><strong>2:</strong> Include file directive with <em>using namespace std;</em> directive</p>
 </div>
-<h4 id="the-main-function">The *main()** function</h4>
+<h4 id="the-main-function"><a href="#the-main-function">The *main()** function</a></h4>
 <div class="figure">
 <img src="fig/03_hello_world.png" alt="3: Comments, single-line" /><p class="caption"><strong>3:</strong> Comments, single-line</p>
 </div>
@@ -102,18 +108,18 @@
 <div class="figure">
 <img src="fig/05_hello_world.png" alt="5: Print to screen with operator &lt;&lt;" /><p class="caption"><strong>5:</strong> Print to screen with operator &lt;&lt;</p>
 </div>
-<h4 id="the-return-line-or-end-of-program">The <em>return</em> line or <em>end of program</em></h4>
+<h4 id="the-return-line-or-end-of-program"><a href="#the-return-line-or-end-of-program">The <em>return</em> line or <em>end of program</em></a></h4>
 <div class="figure">
 <img src="fig/06_hello_world.png" alt="6: return 0;. End of the program" /><p class="caption"><strong>6:</strong> <em>return 0;</em>. End of the program</p>
 </div>
-<h4 id="the-output-of-the-program">The output of the program</h4>
+<h4 id="the-output-of-the-program"><a href="#the-output-of-the-program">The output of the program</a></h4>
 <div class="figure">
 <img src="fig/07_hello_world.png" alt="7: Output of the program executed in terminal" /><p class="caption"><strong>7:</strong> Output of the program executed in terminal</p>
 </div>
-<h3 id="practice-1">Practice:</h3>
+<h3 id="practice-1"><a href="#practice-1">Practice:</a></h3>
 <p><strong>EXERCISE 2</strong> : Copy the source code of <a href="src/hello_world.cpp"><strong>hello world program</strong></a> in the new project created above, compile and execute. You should display the “Hello world” again in the console.</p>
-<h2 id="comments">Comments</h2>
-<h3 id="why-comments">why comments?</h3>
+<h2 id="comments"><a href="#comments">Comments</a></h2>
+<h3 id="why-comments"><a href="#why-comments">why comments?</a></h3>
 <ul>
 <li>Comments are used to document your program, i.e., you know what exactly does each variable or statement .</li>
 <li>Comments are useful for hiding non-usable code.</li>
@@ -123,7 +129,7 @@
 <li>Too many comments is bad style programming.</li>
 <li>Comments in IDE are coloured with a specific colour.</li>
 </ul>
-<h3 id="practice-2">Practice:</h3>
+<h3 id="practice-2"><a href="#practice-2">Practice:</a></h3>
 <p><strong>EXERCISE 3</strong> : Create a new project (p3 for example) in the workspace and copy the source code of <a href="src/comment.cpp">comment.cpp file</a> in to the main.cpp file. You should have something like this:</p>
 <div class="figure">
 <img src="fig/01_comment.png" />
@@ -133,8 +139,8 @@
 <img src="fig/02_comment.png" />
 </div>
 <p><strong>EXERCISE 4</strong>: Delete or write more comments in the program. Then compile and execute the program. You should not see any differences in the console output.</p>
-<h2 id="c-cinstdcin-coutstdcout-endlstdendl">C++ cin/std::cin, cout/std::cout, endl/std::endl</h2>
-<h3 id="c-cinstdcin">C++ cin/std::cin</h3>
+<h2 id="c-cinstdcin-coutstdcout-endlstdendl"><a href="#c-cinstdcin-coutstdcout-endlstdendl">C++ cin/std::cin, cout/std::cout, endl/std::endl</a></h2>
+<h3 id="c-cinstdcin"><a href="#c-cinstdcin">C++ cin/std::cin</a></h3>
 <ul>
 <li><p><strong>Syntax</strong>: <em>cin &gt;&gt; variable ;</em> . Pay attention to the “<strong>;</strong>” (semicolon). Every statement in C/C++ finishes with “<strong>;</strong>”.</p>
 <div class="figure">
@@ -150,7 +156,7 @@
 <li>You can load many inputs to different variables.</li>
 <li><p><em>Note</em>: You can understand <em>cin &gt;&gt; variable ;</em> such as: “extract (<em>&gt;&gt;</em>) from the keyboard device (<em>cin</em>) the data and store it in (<em>variable</em>)”.</p></li>
 </ul>
-<h3 id="c-coutstdcout">C++ cout/std::cout</h3>
+<h3 id="c-coutstdcout"><a href="#c-coutstdcout">C++ cout/std::cout</a></h3>
 <ul>
 <li><p><strong>Syntax</strong>: <em>cout &lt;&lt; variable ;</em> or <em>cout &lt;&lt; “<string>”</em> ; . Anything between quotation marks is string. Pay attention to the “<strong>;</strong>” (semicolon).</p>
 <div class="figure">
@@ -169,7 +175,7 @@
 <div class="figure">
 <img src="fig/scheme_cincout.png" alt="scheme 3: cin/cout form C++" /><p class="caption"><strong>scheme 3</strong>: cin/cout form C++</p>
 </div>
-<h3 id="c-endlstdendl">C++ endl/std::endl</h3>
+<h3 id="c-endlstdendl"><a href="#c-endlstdendl">C++ endl/std::endl</a></h3>
 <ul>
 <li><p><strong>Syntax</strong>: <em>&lt;&lt; endl ;</em> . Pay attention to the “<strong>;</strong>” (semicolon).</p>
 <div class="figure">
@@ -180,7 +186,7 @@
 <li>You have to use the insertion operator before: <strong>&lt;&lt; endl;</strong></li>
 <li><p><strong>endl variable</strong> is equivalent to <strong>“\n” character</strong></p></li>
 </ul>
-<h3 id="practice-3">Practice:</h3>
+<h3 id="practice-3"><a href="#practice-3">Practice:</a></h3>
 <p><strong>EXERCISE 5</strong>: Create a new project (p4 for example) in the workspace and copy the source code of <a href="src/cincoutendl.cpp">cincoutendl.cpp file</a> in to the main.cpp file. You should have something like this:</p>
 <div class="figure">
 <img src="fig/01_cincoutendl.png" />
@@ -189,14 +195,17 @@
 <p>Pay attention to the new variable type “string”. You have to include a new file at the beginning: <strong>#include &lt;string&gt;</strong>.</p>
 <p>================================================================================</p>
 <ul>
-<li>
+  <li>
 <a href="index.html">Home</a>
 </li>
-<li>
+  <li>
 <a href="seminar_partI.html">Part I</a>
 </li>
-<li>
+  <li>
 <a href="seminar_partIII.html">Part III</a>
+</li>
+  <li>
+<a href="seminar_partIV.html">Part IV</a>
 </li>
 </ul>
 </body>

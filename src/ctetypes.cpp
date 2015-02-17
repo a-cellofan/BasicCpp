@@ -122,7 +122,7 @@ int main()
    i_number = (char) c_string;
    cout << "i_number = (char) c_string => i_number = " << i_number << endl;
 
-   c_string = (char) s_string;
+   c_string = (char) i_number;
    cout << "c_string = (string) s_string => c_string = " << c_string << endl;
 
    /*

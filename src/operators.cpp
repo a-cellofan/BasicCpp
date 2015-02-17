@@ -64,7 +64,7 @@ int main()
    cout << "0 || !(n1) = " << (0 || !(n1)) << endl;
 
 
-   // Can you guess the result before run the program ?Why?
+   // Can you guess the result before running the program ?Why?
    cout << "Mixing operators:" << endl;
    cout << "n1(n2+n3)d1/d2 - d3 = " << n1*(n2+n3)*d1/d2 - d3 << endl; 
    cout << "n1(n2+n3)d1/(d2 - d3) = " << n1*(n2+n3)*d1/(d2 - d3) << endl;

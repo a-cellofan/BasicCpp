@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Part IV: Statements and decision making</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Part IV: Statements and decision making">
+  <meta name="author" content="Arturo Narros Gonzalez">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/default.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Part IV: Statements and decision making</h1>
+    <h2></h2>
+    <p>Arturo Narros Gonzalez<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>What it is program <em>statement</em>.</li>
+<li>What it is <em>program flow</em>.</li>
+<li>Implement decision making in a program:
+
+<ol>
+<li><strong>if</strong> structure.</li>
+<li><strong>if-else</strong> structure.</li>
+<li><strong>nested if-else</strong> structure.</li>
+<li><strong>switch</strong> statement.</li>
+<li><strong>switch</strong> is equivalent to <strong>nested If-else</strong>.</li>
+</ol></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Statements</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>C++ statements are individual instructions of a program:</p>
+
+<ol>
+<li>They all finished with a <strong>semicolon</strong> or <strong>;</strong>.</li>
+<li>They are executed in the same order which they appear in the program.</li>
+</ol>
+
+<p>We have already seen several statements, for example:</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <article data-timings="">
+    <ul>
+<li><p>Variable declarations.</p>
+
+<div class="auto">
+<pre>
+    int x;
+</pre>
+</div></li>
+<li><p>Output lines: <a href="seminar_partII.html">std::cout/cout</a>.</p>
+
+<div class="auto">
+<pre>
+    cout << "x is 100";
+</pre>
+</div></li>
+<li><p>Input lines: <a href="seminar_partII.html">std::cin/cin</a>.</p>
+
+<div class="auto">
+<pre>
+    cin >> x ;
+</pre>
+</div></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Program Flow and control flow statements.</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A program can be defined as ordered execution of several computer statements.
+The execution order is given by the location in the program from the top to the button. </p>
+
+<p>Control flow statements allows to prevent (Decision making) or repeat (Loop statements)
+execution of certain ones. </p>
+
+<p>Here you can see two <em>program flow diagrams</em> from a very basic programs:</p>
+
+<p><img src="../fig/program_flow.png" alt="program flow diagrams" style="width:75%"></p>
+
+<p>Can you interpret them?</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Decision Making</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p><em>if ( condition ) statement;</em> : In case the condition is false, the statement is not executed.</p>
+
+<div class="auto">
+<pre>
+if (m == 18)
+    cout << "m is = 18";
+</pre>
+</div></li>
+<li><p><em>if ( condition ) { statement 1; statement 2;}</em> : If you want to execute several statements under the same condition you need braces (<em>{}</em>). For example:</p>
+
+<div class="auto">
+<pre>
+if (m == 18)
+{
+    cout << "m is ";
+    cout << m;
+}
+</pre>
+</div></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <article data-timings="">
+    <ul>
+<li><p><em>if ( condition ) statement 1; else statement 2;</em> : You want to execute a single statement if condition is <em>true</em>, otherwise statement2 is executed . In case you want to group several 
+statements under the same condition you need keys, for example:</p>
+
+<div class="auto">
+<pre>
+if (m == 18)
+{
+    cout << "m is 18";
+    cout << "You are an adult person";
+}
+else
+    cout << "m is not 18";
+</pre>
+</div></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <article data-timings="">
+    <ul>
+<li><p><em>Nested if conditions</em> : You can combine <em>if(){}else{}</em> structures as for example:</p>
+
+<div class="auto">
+<pre>
+if (m > 0)
+    cout << "m is positive";
+else if (m < 0)
+    cout << "m is negative";
+else
+    cout << "m is 0";
+</pre>
+</div></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <article data-timings="">
+    <ul>
+<li><p><em>switch</em> : Similar to <em>nested if-else</em>, is used whenever a variable gets a constant value:
+Switch syntax is:</p>
+
+<div class="auto">
+<pre>
+switch (expression)
+{
+case constant1:
+    group-of-statements-1;
+    break;
+case constant2:
+    group-of-statements-2;
+    break;
+.
+.
+.
+default:
+    default-group-of-statements
+}
+</pre>
+</div></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <article data-timings="">
+    <pre><code>An example is:
+
+switch (x) {
+    case 1:
+    case 2:
+    case 3:
+        cout &lt;&lt; &quot;x is 1, 2 or 3&quot;;
+        break;
+    default:
+        cout &lt;&lt; &quot;x is not 1, 2 nor 3&quot;;
+}
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>Practice</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><strong>EXERCISE 1</strong>: Please, create a new project (p8?) in the workspace and copy the source code of 
+<a href="../src/decision_making.cpp">decision_making.cpp file</a> on to the new main.cpp file:</p>
+
+<ul>
+<li>Read carefully the statements of the programme.</li>
+<li>Try to understand what is the possible output as a function of the possible input.</li>
+<li>Is there something missing in your opinion?</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <article data-timings="">
+    <p>Here there is a scheme that might be useful to understand this program. </p>
+
+<p><img src="../fig/sch_dm1.png" alt="program flow diagram" style="width:60%"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <article data-timings="">
+    <p><strong>EXERCISE 2</strong>: Please, create a new project (p9?) in the workspace and copy the source code of 
+<a href="../src/decision_making2.cpp">decision_making2.cpp file</a> on to the new main.cpp file:</p>
+
+<ul>
+<li>Read carefully the statements of the programme.</li>
+<li>Try to understand what is the possible output as a function of the possible input.</li>
+<li>What should be the code in case you want to have a second opportunity to the programme user?</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <article data-timings="">
+    <p>Here there is a scheme that might be useful to understand this program. </p>
+
+<p><img src="../fig/sch_dm2.png" alt="program flow diagram 2" style="width:60%"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <article data-timings="">
+    <p><strong>EXERCISE 3</strong>: Please, create a new project (p10?) in the workspace and copy the source code of 
+<a href="src/decision_making3.cpp">decision_making3.cpp file</a> on to the new main.cpp file:</p>
+
+<ul>
+<li>Read carefully the statements of the programme.</li>
+<li>Try to understand what is the possible output as a function of the possible input.</li>
+<li>What will happen if the input in line 32 is not a text but a number?</li>
+<li>How will you change it in order to prevent such case?</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <article data-timings="">
+    <p>Here there is a scheme that might be useful to understand this program. </p>
+
+<p><img src="../fig/sch_dm3.png" alt="program flow diagram 3" style="width:60%"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <article data-timings="">
+    <p><strong>EXERCISE 4</strong>: Please, create a new project (p10?) in the workspace and copy the source code of 
+<a href="src/decision_making4.cpp">decision_making3.cpp file</a> on to the new main.cpp file:</p>
+
+<ul>
+<li>Read carefully the statements of the programme.</li>
+<li>Try to understand what is the possible output as a function of the possible input.</li>
+<li>Can you be even more specific, for example, in line 77 the answer can be not a number...
+How can you change the code in order to prevent this case?</li>
+<li>Can you think in other cases when the programme might not work?</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <article data-timings="">
+    <p>Here there is a scheme that might be useful to understand this program. </p>
+
+<p><img src="../fig/sch_dm4.png" alt="program flow diagram 4" style="width:55%"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <article data-timings="">
+    <p><strong>EXERCISE 5</strong>: Please, create a new project (p11?) in the workspace and copy the source code of 
+<a href="src/decision_making5.cpp">decision_making3.cpp file</a> on to the new main.cpp file:</p>
+
+<ul>
+<li>Read carefully the statements of the programme.</li>
+<li>Try to understand what is the possible output as a function of the possible input.</li>
+<li>Switch-statement can be easily transformed in a nested if-else statement.
+Can you please do it?</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  <article data-timings="">
+    <p>Here there is a scheme that might be useful to understand this program. </p>
+
+<p><img src="../fig/sch_dm5.png" alt="program flow diagram 5" style="width:50%"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Statements'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title=''>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Program Flow and control flow statements.'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Decision Making'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title=''>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title=''>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title=''>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title=''>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Practice'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title=''>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title=''>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title=''>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title=''>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title=''>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title=''>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title=''>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title=''>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title=''>
+         19
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
