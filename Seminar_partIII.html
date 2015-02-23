@@ -4,23 +4,16 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <meta name="author" content="Arturo Narros" />
-  <meta name="date" content="2015-11-02" />
-  <title>C/C++ Seminar</title>
+  <title></title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="/Users/Aurelius/Library/Mobile Documents/com~apple~CloudDocs/iWork/Queen_Mary/Lessons/SeminarC_Cpp/src/john-style.css" type="text/css" />
   <link rel="stylesheet" href="/Users/Aurelius/Library/Mobile Documents/com~apple~CloudDocs/iWork/Queen_Mary/Lessons/SeminarC_Cpp/src/mio.css" type="text/css" />
 </head>
 <body>
-<div id="header">
-<h1 class="title">C/C++ Seminar</h1>
-<h1 class="subtitle">Part III: Tokens on C++</h1>
-<h2 class="author">Arturo Narros</h2>
-<h3 class="date">11/02/2015</h3>
-</div>
 <div id="TOC">
 <ul>
 <li><a href="#part-iii-tokens-on-c">Part III: Tokens on C++</a><ul>
+<li><a href="#introduction">Introduction</a></li>
 <li><a href="#tokens">Tokens</a></li>
 <li><a href="#identifiers">Identifiers</a><ul>
 <li><a href="#rules">Rules:</a></li>
@@ -46,14 +39,31 @@
 </ul></li>
 </ul>
 </div>
-<h1 id="part-iii-tokens-on-c"><a href="#part-iii-tokens-on-c">Part III: Tokens on C++</a></h1>
-<h2 id="tokens"><a href="#tokens">Tokens</a></h2>
+<hr />
+<p>author: Arturo Narros date: 11/02/2015 title: C/C++ Seminar subtitle: “Part III: Tokens on C++”</p>
+<hr />
+<h1 id="part-iii-tokens-on-c">Part III: Tokens on C++</h1>
+<h2 id="introduction">Introduction</h2>
+<p>You will learn:</p>
+<ul>
+<li>What it is a token and different kinds of tokens in C/C++:
+<ol style="list-style-type: decimal">
+<li>Identifiers.</li>
+<li>Keywords.</li>
+<li>Constants.</li>
+<li>Types.</li>
+<li>Operators.</li>
+</ol></li>
+<li>Rules to name different variables in a programme.</li>
+<li>Casting between types.</li>
+</ul>
+<h2 id="tokens">Tokens</h2>
 <div class="figure">
 <img src="fig/basic_syntax.png" alt="Scheme 2: Basic Syntax in C/C++" /><p class="caption"><strong>Scheme 2</strong>: Basic Syntax in C/C++</p>
 </div>
-<h2 id="identifiers"><a href="#identifiers">Identifiers</a></h2>
+<h2 id="identifiers">Identifiers</h2>
 <p>Any name element is an identifier. They are basically names given by the programmer. It is any variable, function, data definition, etc.</p>
-<h3 id="rules"><a href="#rules">Rules:</a></h3>
+<h3 id="rules">Rules:</h3>
 <ol style="list-style-type: decimal">
 <li>Alphabet, digits and underscore are allowed.</li>
 <li>They can not start with a digit.</li>
@@ -61,7 +71,7 @@
 <li>It is case-sensitive.</li>
 <li>Special characters are not permitted.</li>
 </ol>
-<h3 id="practice"><a href="#practice">Practice:</a></h3>
+<h3 id="practice">Practice:</h3>
 <p><strong>EXERCISE 6</strong>: Please, create a new project (p5?) in the workspace and copy the source code of <a href="src/identifiers.cpp">identifiers.cpp file</a> on to the new main.cpp file. You should have something like this:</p>
 <div class="figure">
 <img src="fig/01_identifiers.png" />
@@ -72,7 +82,7 @@
 <li>Why not?</li>
 <li>What do the compiler say about them?</li>
 </ul>
-<h2 id="keywords-and-special-characters"><a href="#keywords-and-special-characters">Keywords and special characters</a></h2>
+<h2 id="keywords-and-special-characters">Keywords and special characters</h2>
 <p>Here there is the list of keywords:</p>
 <div class="figure">
 <img src="fig/01_keywords.png" />
@@ -82,16 +92,16 @@
 <img src="fig/01_specialchar.png" />
 </div>
 <p>They can not be used as identifiers (named variables, functions, etc. )</p>
-<h3 id="practice-1"><a href="#practice-1">Practice:</a></h3>
+<h3 id="practice-1">Practice:</h3>
 <p><strong>EXERCISE 7</strong>: Please, identify the keywords and special characters, using the lists above, in <a href="src/identifiers.cpp">identifiers.cpp program</a></p>
-<h2 id="constants-and-types"><a href="#constants-and-types">Constants and Types</a></h2>
-<h3 id="constants"><a href="#constants">Constants</a></h3>
+<h2 id="constants-and-types">Constants and Types</h2>
+<h3 id="constants">Constants</h3>
 <ul>
 <li>They are any integer number or float point, such as <em>8</em> or <em>19.27</em>.</li>
 <li>They are any single letter between single quotation marks, such as <em>‘\n’</em> or <em>‘a’</em>.</li>
 <li>They are strings between double quotation marks, such as <em>“Hello world”</em>.</li>
 </ul>
-<h3 id="fundamental-types"><a href="#fundamental-types">Fundamental types</a></h3>
+<h3 id="fundamental-types">Fundamental types</h3>
 <p>You use them to <em>define variables</em> of <strong>type</strong>:</p>
 <ul>
 <li><strong>void</strong> (empty type): represent nothing(?).</li>
@@ -117,10 +127,10 @@
 <div class="figure">
 <img src="fig/02_range.png" alt="table 2:Range of validity of each type" /><p class="caption"><strong>table 2:Range of validity of each type</strong></p>
 </div>
-<h3 id="transformation-between-types-casting"><a href="#transformation-between-types-casting">Transformation between types (casting)</a></h3>
+<h3 id="transformation-between-types-casting">Transformation between types (casting)</h3>
 <p>You can transform variables of <strong>certain</strong> types in other variables with different types. The process is as follows:</p>
 <p><strong>int intvar = (int) floatvar</strong> where floatvar is a “<strong>float</strong>” type.</p>
-<h3 id="practice-2"><a href="#practice-2">Practice:</a></h3>
+<h3 id="practice-2">Practice:</h3>
 <p><strong>EXERCISE 8</strong>:Please, create a new project (p6?) in the workspace and copy the source code of <a href="src/ctetypes.cpp">ctetypes.cpp file</a> on to the new main.cpp file. You should have something like this:</p>
 <div class="figure">
 <img src="fig/01_typescast.png" />
@@ -130,13 +140,15 @@
 <li>Is there any mistake? where? What does the compiler say?</li>
 <li>Change the variable s_string by i_number, Compile and run….</li>
 </ul>
-<h2 id="c-operators"><a href="#c-operators">C++ Operators</a></h2>
+<h2 id="c-operators">C++ Operators</h2>
 <p>Let’s consider that A = 4 and B = 2:</p>
-<h3 id="arithmetic-operators"><a href="#arithmetic-operators">Arithmetic Operators:</a></h3>
+<h3 id="arithmetic-operators">Arithmetic Operators:</h3>
 <table>
+<colgroup>
 <col width="15%" />
 <col width="63%" />
 <col width="13%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Operator</th>
@@ -182,11 +194,13 @@
 </tr>
 </tbody>
 </table>
-<h3 id="relational-operators"><a href="#relational-operators">Relational Operators:</a></h3>
+<h3 id="relational-operators">Relational Operators:</h3>
 <table>
+<colgroup>
 <col width="12%" />
 <col width="34%" />
 <col width="34%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Symbol</th>
@@ -227,11 +241,13 @@
 </tr>
 </tbody>
 </table>
-<h3 id="logical-operators"><a href="#logical-operators">Logical Operators:</a></h3>
+<h3 id="logical-operators">Logical Operators:</h3>
 <table>
+<colgroup>
 <col width="18%" />
 <col width="61%" />
 <col width="18%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Operator</th>
@@ -252,11 +268,13 @@
 </tr>
 </tbody>
 </table>
-<h3 id="assignment-operators"><a href="#assignment-operators">Assignment Operators</a></h3>
+<h3 id="assignment-operators">Assignment Operators</h3>
 <table>
+<colgroup>
 <col width="22%" />
 <col width="50%" />
 <col width="20%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Operator</th>
@@ -282,9 +300,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="bitwise-operators."><a href="#bitwise-operators.">Bitwise Operators.</a></h3>
+<h3 id="bitwise-operators.">Bitwise Operators.</h3>
 <p>(out of the scope of this course )</p>
-<h3 id="practice-3"><a href="#practice-3">Practice:</a></h3>
+<h3 id="practice-3">Practice:</h3>
 <p><strong>EXERCISE 9</strong>:Please, create a new project (p7?) in the workspace and copy the source code of <a href="src/operators.cpp">operators.cpp file</a> on to the new main.cpp file. You should have something like this:</p>
 <div class="figure">
 <img src="fig/01_operators.png" />
@@ -292,17 +310,17 @@
 <p>Please, read carefully the program statements and the comments above them. Compile/run the code.</p>
 <p>================================================================================</p>
 <ul>
-  <li>
+<li>
 <a href="index.html">Home</a>
 </li>
-  <li>
-<a href="seminar_partII.html">Part I</a>
+<li>
+<a href="Seminar_partII.html">Part I</a>
 </li>
-  <li>
-<a href="seminar_partII.html">Part II</a>
+<li>
+<a href="Seminar_partII.html">Part II</a>
 </li>
-  <li>
-<a href="seminar_partIV.html">Part IV</a>
+<li>
+<a href="Seminar_partIV.html">Part IV</a>
 </li>
 </ul>
 </body>

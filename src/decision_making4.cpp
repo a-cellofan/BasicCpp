@@ -99,7 +99,7 @@ int main()
     - Read carefully the comments and the code above. 
     - Do you understand it?
     - Identify the different if statements;
-    - Can you be even more specific, for example, in line 77 the answer can be not a number...
+    - Can you be even more specific, for example, in line 77 the answer can be another string than yes/no...
       How can you change the code in order to prevent this case?
     - Can you think in other cases when the programme might not work?
     */

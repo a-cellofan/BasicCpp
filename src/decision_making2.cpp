@@ -48,7 +48,7 @@ int main()
     EXERCISE: 
     - Read carefully the statements of the programme.
     - Try to understand what is the possible output as a function of the possible input.
-    - What should be the code in case you want to have a second opportunity to the programme user?
+    - What should be the code in case you want to give a second opportunity to the programme user?
     */
 
    	return 0;

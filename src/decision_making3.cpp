@@ -64,7 +64,7 @@ int main()
     EXERCISE: 
     - Read carefully the statements of the programme.
     - Try to understand what is the possible output as a function of the possible input.
-    - What will happen if the input in line 32 is not a text but a number?
+    - What will happen if the input in line 32 is not text but a number?
     - How will you change it in order to prevent such case?
     */
 

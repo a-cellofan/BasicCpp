@@ -71,7 +71,7 @@ int main()
     cin >> answer;
     iss.str(answer);
 
-    if (!(iss >> mynumber).fail()) {// check the state of faliure ...idem tan before
+    if (!(iss >> mynumber).fail()) {// check the state of faliure ...idem than before
       // Here it means there was not fail! it is a number.
       cout << "Your number is :" << mynumber << endl;
       if(mynumber < 0 || mynumber > 10){

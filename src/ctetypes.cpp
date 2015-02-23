@@ -3,11 +3,13 @@ This is ctetypes.cpp file.
 It displays several outputs and an input number in the console.
 
 This is an example to explain types in C/C++ and casting :
+Be careful with the compiler and logic errors.....
 
 */  
 
 #include <iostream>
 #include <string>
+#include <limits>
 using namespace std;
 
 // A C++ program begins at main().
@@ -52,29 +54,41 @@ int main()
    cout << "d_number (double) = " << d_number << endl;
    cout << "c_string (char) = " << c_string << endl;
    cout << "c_string2 (char) = " << c_string2 << endl;
+   cout << "s_string2 (string) = " << s_string << endl;
 
    /*
    Careful with types:
    */
 
    /* cout + insertion operator + a string + insertion operator + end-of-line variable + ; */
-   cout << "Please, introduce a string as input to be stored as a integer type in i_number" << endl;
+   cout << "Please, introduce a string as input " << endl;
    cin >> i_number ;
    cout << "i_number (integer) = " << i_number << endl;
+   cin.clear(); 
+   cin.ignore(numeric_limits<std::streamsize>::max(), '\n'); 
+   // What's the problem?
+   return 0;
+   // What's the problem?
 
    /*
    Careful with the range of the types
    */
 
-   cout << "Please, introduce big integer (>40000) to be stored as a integer type in i_number" << endl;
+   cout << "Please, introduce big integer (>3x10^9) to be stored as a integer type in i_number" << endl;
    cin >> i_number ;
+   cin.clear(); 
+   cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
    cout << "i_number (int) = " << i_number << endl;
-   cout << "Did you get what you expect? try again ... " << endl;
-   cin >> lu_number; 
+   cout << "Did you get what you expect? try again the same number ... " << endl;
+   cin >> i_number2;
    cout << "i_number2 (long int)= " << i_number2 << endl;
-   cout << "Did you get what you expect? try again ... " << endl;
+   cin.clear(); 
+   cin.ignore(numeric_limits<std::streamsize>::max(), '\n'); 
+   cout << "Did you get what you expect? try it again ... " << endl;
    cin >> i_number3; 
    cout << "i_number (long long int)= " << i_number3 << endl;
+   cin.clear(); 
+   cin.ignore(numeric_limits<std::streamsize>::max(), '\n'); 
 
    /*
    Exercise: Change the int vars(int,long int,long long int) by real vars (float,double,long double), to see what happens.
@@ -87,10 +101,14 @@ int main()
    cout << "Please, introduce negative integer to be stored as a unsigned int type in u_number" << endl;
    cin >> u_number ;
    cout << "u_number (unsigned)= " << u_number << endl;
+   cin.clear(); 
+   cin.ignore(numeric_limits<std::streamsize>::max(), '\n'); 
 
    cout << "Please, introduce positive integer,x, (40000 < x < 65000) to be stored as a unsigned int type in u_number" << endl;
    cin >> u_number ;
    cout << "u_number (unsigned)= " << u_number << endl;
+   cin.clear(); 
+   cin.ignore(numeric_limits<std::streamsize>::max(), '\n'); 
   
    /* 
    Automatic casting...compiler assumptions 
@@ -100,15 +118,21 @@ int main()
    cout << "Please, introduce negative real number ( -65000 < x < -40000) to be stored as a unsigned int type in u_number" << endl;
    cin >> u_number ;
    cout << "u_number (unsigned)= " << u_number << endl;
+   cin.clear(); 
+   cin.ignore(numeric_limits<std::streamsize>::max(), '\n'); 
 
    cout << "Please, introduce real number (10^7 < x < 10^308) to be stored as a float type in u_number" << endl;
    cin >> f_number ;
    cout << "f_number (unsigned)= " << f_number << endl;
+   cin.clear(); 
+   cin.ignore(numeric_limits<std::streamsize>::max(), '\n'); 
 
    cout << "Please, introduce a string with more than one character to be stored in c_string" << endl;
    cin >> c_string ;
    cout << "c_string (char)= " << c_string << endl;
-
+   cin.clear(); 
+   cin.ignore(numeric_limits<std::streamsize>::max(), '\n'); 
+   
    /*
    Exercise: code and substitute other variables to see what happens.
    */
@@ -122,7 +146,8 @@ int main()
    i_number = (char) c_string;
    cout << "i_number = (char) c_string => i_number = " << i_number << endl;
 
-   c_string = (char) i_number;
+   c_string = (char) s_string;
+   //c_string = (char) u_number;
    cout << "c_string = (string) s_string => c_string = " << c_string << endl;
 
    /*
@@ -131,6 +156,8 @@ int main()
 
    /*
    Exercise: Feel free to experiment different casting and inputs.
+   Ask if you do not understand something....
+
    */
 
    return 0;

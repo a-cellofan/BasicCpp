@@ -42,35 +42,40 @@
 
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
   <article data-timings="">
-    <!-- Limit image width and height -->
+    <p>You will learn:</p>
 
-<style type='text/css'>
-img {
-    max-height: 460px;
-    max-width: 792px;
-}
-</style>
+<ul>
+<li><p>What it is a token and different kinds of tokens in C/C++:</p>
 
-<!-- Center image on slide -->
-
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
-
-<script type='text/javascript'>
-$(function() {
-    $("p:has(img)").addClass('centered');
-});
-</script>
-
-<h2>Tokens</h2>
-
-<p><img src="../fig/basic_syntax.png" alt=""></p>
+<ol>
+<li>Identifiers.</li>
+<li>Keywords.</li>
+<li>Constants.</li>
+<li>Types.</li>
+<li>Operators.</li>
+</ol></li>
+<li><p>Rules to name different variables in a programme.</p></li>
+<li><p>Casting between types.</p></li>
+</ul>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
-
 <slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Tokens</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="../fig/basic_syntax.png" alt="program flow diagram 2" style="width:100%"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-3" style="background:;">
   <hgroup>
     <h2>Identifiers</h2>
   </hgroup>
@@ -91,8 +96,7 @@ by the programmer. It is any variable, function, data definition, etc.</p>
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-3" style="background:;">
+<slide class="" id="slide-4" style="background:;">
   <hgroup>
     <h2>Practice</h2>
   </hgroup>
@@ -110,16 +114,14 @@ by the programmer. It is any variable, function, data definition, etc.</p>
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-4" style="background:;">
+<slide class="" id="slide-5" style="background:;">
   <article data-timings="">
-    <p><img src="../fig/01_identifiers.png" alt=""></p>
+    <p><img src="../fig/01_identifiers.png" alt="Snapshot of the IDE Exercise 1" style="width:90%"></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-5" style="background:;">
+<slide class="" id="slide-6" style="background:;">
   <article data-timings="">
     <p>Try to answer next questions:</p>
 
@@ -132,33 +134,30 @@ by the programmer. It is any variable, function, data definition, etc.</p>
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-6" style="background:;">
+<slide class="" id="slide-7" style="background:;">
   <hgroup>
     <h2>Keywords and special characters</h2>
   </hgroup>
   <article data-timings="">
     <p><strong>List of keywords</strong>:</p>
 
-<p><img src="../fig/01_keywords.png" alt=""></p>
+<p><img src="../fig/01_keywords.png" alt="Keywords" style="width:60%"></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-7" style="background:;">
+<slide class="" id="slide-8" style="background:;">
   <article data-timings="">
     <p>List of <strong>special characters</strong></p>
 
-<p><img src="../fig/01_specialchar.png" alt=""></p>
+<p><img src="../fig/01_specialchar.png" alt="Special characters" style="width:100%"></p>
 
 <p>They can not be used as identifiers (named variables, functions, etc. )</p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-8" style="background:;">
+<slide class="" id="slide-9" style="background:;">
   <hgroup>
     <h2>Practice</h2>
   </hgroup>
@@ -169,8 +168,7 @@ using the previous list, in <a href="src/identifiers.cpp">identifiers.cpp progra
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-9" style="background:;">
+<slide class="" id="slide-10" style="background:;">
   <hgroup>
     <h2>Constants</h2>
   </hgroup>
@@ -184,8 +182,7 @@ using the previous list, in <a href="src/identifiers.cpp">identifiers.cpp progra
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-10" style="background:;">
+<slide class="" id="slide-11" style="background:;">
   <hgroup>
     <h2>Fundamental types</h2>
   </hgroup>
@@ -207,18 +204,16 @@ using the previous list, in <a href="src/identifiers.cpp">identifiers.cpp progra
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-11" style="background:;">
+<slide class="" id="slide-12" style="background:;">
   <article data-timings="">
     <p><strong>Integer properties</strong></p>
 
-<p><img src="../fig/01_integerprop.png" alt=""></p>
+<p><img src="../fig/01_integerprop.png" alt="Special characters" style="width:75%"></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-12" style="background:;">
+<slide class="" id="slide-13" style="background:;">
   <article data-timings="">
     <ul>
 <li><p>Floating point: you can represent real numbers. </p>
@@ -233,18 +228,16 @@ using the previous list, in <a href="src/identifiers.cpp">identifiers.cpp progra
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-13" style="background:;">
+<slide class="" id="slide-14" style="background:;">
   <article data-timings="">
     <p><strong>Range of validity of each type</strong></p>
 
-<p><img src="../fig/02_range.png" alt=""></p>
+<p><img src="../fig/02_range.png" alt="Special characters" style="width:75%"></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-14" style="background:;">
+<slide class="" id="slide-15" style="background:;">
   <hgroup>
     <h2>Transformation between types (casting)</h2>
   </hgroup>
@@ -258,8 +251,7 @@ where floatvar is a &quot;<strong>float</strong>&quot; type.</p>
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-15" style="background:;">
+<slide class="" id="slide-16" style="background:;">
   <hgroup>
     <h2>Practice</h2>
   </hgroup>
@@ -268,7 +260,7 @@ where floatvar is a &quot;<strong>float</strong>&quot; type.</p>
 
 <ul>
 <li>Create a new project (p6?) </li>
-<li>Copy the source code of <a href="src/ctetypes.cpp">ctetypes.cpp file</a> on to the new main.cpp file. You should have something</li>
+<li>Copy the source code of <a href="src/ctetypes.cpp">ctetypes.cpp file</a> on to the new main.cpp file.</li>
 <li>Read carefully the program statements and the comments above them.</li>
 <li>Compile/run the code:</li>
 </ul>
@@ -276,16 +268,14 @@ where floatvar is a &quot;<strong>float</strong>&quot; type.</p>
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-16" style="background:;">
+<slide class="" id="slide-17" style="background:;">
   <article data-timings="">
-    <p><img src="../fig/01_typescast.png" alt=""></p>
+    <p><img src="../fig/01_typescast.png" alt="Snapshot of the IDE Exercise 2" style="width:90%"></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-17" style="background:;">
+<slide class="" id="slide-18" style="background:;">
   <article data-timings="">
     <p>Answer this questions:</p>
 
@@ -299,8 +289,7 @@ where floatvar is a &quot;<strong>float</strong>&quot; type.</p>
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-18" style="background:;">
+<slide class="" id="slide-19" style="background:;">
   <hgroup>
     <h2>C++ Operators</h2>
   </hgroup>
@@ -310,57 +299,52 @@ where floatvar is a &quot;<strong>float</strong>&quot; type.</p>
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-19" style="background:;">
+<slide class="" id="slide-20" style="background:;">
   <hgroup>
     <h2>Arithmetic Operators</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="../fig/arithmetic_op.png" alt=""></p>
+    <p><img src="../fig/arithmetic_op.png" alt="Arithmetic Operators" style="width:100%"></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-20" style="background:;">
+<slide class="" id="slide-21" style="background:;">
   <hgroup>
     <h2>Relational Operators:</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="../fig/relational_op.png" alt=""></p>
+    <p><img src="../fig/relational_op.png" alt="Relational Operators" style="width:100%"></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-21" style="background:;">
+<slide class="" id="slide-22" style="background:;">
   <hgroup>
     <h3>Logical Operators:</h3>
   </hgroup>
   <article data-timings="">
-    <p><img src="../fig/logical_op.png" alt=""></p>
+    <p><img src="../fig/logical_op.png" alt="Logical Operators" style="width:100%"></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-22" style="background:;">
+<slide class="" id="slide-23" style="background:;">
   <hgroup>
     <h2>Assignment Operators</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="../fig/asignment_op.png" alt=""></p>
+    <p><img src="../fig/asignment_op.png" alt="Assignment Operators" style="width:100%"></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-23" style="background:;">
+<slide class="" id="slide-24" style="background:;">
   <hgroup>
     <h2>Practice:</h2>
   </hgroup>
   <article data-timings="">
-    <p>EXERCISE 9:</p>
+    <p>EXERCISE 2:</p>
 
 <ul>
 <li>Create a new project (p7?) .</li>
@@ -372,40 +356,38 @@ where floatvar is a &quot;<strong>float</strong>&quot; type.</p>
   </article>
   <!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-24" style="background:;">
+<slide class="" id="slide-25" style="background:;">
   <article data-timings="">
-    <p><img src="../fig/01_operators.png" alt=""></p>
+    <p><img src="../fig/01_operators.png" alt="Snapshot of the IDE Exercise 3" style="width:90%"></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
-
     <slide class="backdrop"></slide>
   </slides>
   <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title=''>
+        data-slide=1 title='Introduction'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Identifiers'>
+        data-slide=2 title='Tokens'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Practice'>
+        data-slide=3 title='Identifiers'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title=''>
+        data-slide=4 title='Practice'>
          4
       </a>
     </li>
@@ -417,37 +399,37 @@ where floatvar is a &quot;<strong>float</strong>&quot; type.</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=6 title='Keywords and special characters'>
+        data-slide=6 title=''>
          6
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title=''>
+        data-slide=7 title='Keywords and special characters'>
          7
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=8 title='Practice'>
+        data-slide=8 title=''>
          8
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=9 title='Constants'>
+        data-slide=9 title='Practice'>
          9
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=10 title='Fundamental types'>
+        data-slide=10 title='Constants'>
          10
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=11 title=''>
+        data-slide=11 title='Fundamental types'>
          11
       </a>
     </li>
@@ -465,19 +447,19 @@ where floatvar is a &quot;<strong>float</strong>&quot; type.</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=14 title='Transformation between types (casting)'>
+        data-slide=14 title=''>
          14
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=15 title='Practice'>
+        data-slide=15 title='Transformation between types (casting)'>
          15
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=16 title=''>
+        data-slide=16 title='Practice'>
          16
       </a>
     </li>
@@ -489,44 +471,50 @@ where floatvar is a &quot;<strong>float</strong>&quot; type.</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=18 title='C++ Operators'>
+        data-slide=18 title=''>
          18
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=19 title='Arithmetic Operators'>
+        data-slide=19 title='C++ Operators'>
          19
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=20 title='Relational Operators:'>
+        data-slide=20 title='Arithmetic Operators'>
          20
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=21 title='Logical Operators:'>
+        data-slide=21 title='Relational Operators:'>
          21
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=22 title='Assignment Operators'>
+        data-slide=22 title='Logical Operators:'>
          22
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=23 title='Practice:'>
+        data-slide=23 title='Assignment Operators'>
          23
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=24 title=''>
+        data-slide=24 title='Practice:'>
          24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title=''>
+         25
       </a>
     </li>
   </ul>
